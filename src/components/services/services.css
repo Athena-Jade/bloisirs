@@ -1,0 +1,104 @@
+
+/********* services *********/
+.services {
+    /*max-width: 100%;*/
+    padding: 2rem 0;
+    position: relative;
+
+}
+
+.services .contenu-services {
+    margin-top: 10rem;
+    margin-bottom: -5rem;  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    gap: 1rem;
+   
+    background-color: #bac4c0;
+  min-height: 10vh;
+    align-content: center;
+
+}
+
+
+/* logos services*/
+.contenu-services .fastf,
+.electri,
+.forest,
+.bath {
+   /**/  background-color: rgb(255, 255, 255);
+     border-radius: 5%; 
+    padding: 0.5rem;
+    font-size: 1.250rem;
+    color: black;   
+    text-align: center;
+    align-self: center;
+    
+   
+}
+
+.fastf,
+.electri,
+.forest,
+.bath{   
+    flex: 0 1 15rem;    
+}
+
+
+.logo-fast, 
+.logo-electri, 
+.logo-forest, 
+.logo-bath{
+    width: 100%; 
+   
+    color: blue;
+}
+.service-texte{
+    font-size: 1.50rem;
+}
+
+
+
+@media screen and (max-width:576px){
+    
+    .services .contenu-services {    
+        max-height: 20vh;        
+    }
+        
+    .fastf,
+    .electri,
+    .forest,
+    .bath{   
+        flex: 0 1 10rem;    
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:450px){            
+    .fastf,
+    .electri,
+    .forest,
+    .bath{   
+        flex: 0 1 8.5rem;    
+    }
+
+       /*    
+    .logo-fast, 
+    .logo-electri, 
+    .logo-forest, 
+    .logo-bath{
+        width: 80%; 
+    
+        
+    }*/
+
+
+    .service-texte{
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,91 @@
+.footer { 
+  margin-top: 10rem; 
+  max-width: 100%;
+  padding: 2rem 0;
+ background-color: black;
+
+}
+
+
+.footer .box-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .contenu-box2  {
+
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container i {
+  color: white;
+  font-weight: bold;
+}
+
+.footer .box-container .box a:hover {
+  color: blue;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+
+
+
+/******** Services ***********/
+.contenu-services{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.fastf, .electri, .forest, .bath{
+  flex: 1 1 10rem;
+ color: white;
+  font-size: 1.25rem;
+}
+
+.logo-fast, .logo-electri, .logo-forest, .logo-bath{
+  width: 100%;
+  color: blue; 
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+
+
+/********* MEDIAS QUERIES *************/
+@media screen and (max-width:450px){        
+  .footer .box-container .box h3 {
+    font-size: 1.5rem;    
+  }
+
+  .footer .box-container .box {    
+    font-size: 1.2rem;
+    
+  } 
+  
+}

@@ -1,0 +1,21 @@
+.page-error{
+    min-height: 100vh;
+}
+.error{
+    margin-top: 5rem;
+}
+
+
+.contenu-error{
+   margin-top: 15rem; 
+   display: flex;
+   justify-content: center;
+   text-align: center;   
+   font-size: 2rem;
+}
+
+.contenu-error-img{
+    flex: 1 1 15rem;
+   
+}
+

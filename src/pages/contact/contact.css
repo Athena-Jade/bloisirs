@@ -1,0 +1,109 @@
+
+.h1-contact {
+    margin-top: 25rem;
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+}
+
+.contact-form {  
+   margin: 3rem auto;
+   max-width: 50%;           
+    background-color: rgba(20, 43, 43, 0.74);
+    border-radius: 2rem;
+  
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;   
+    padding: 1rem;
+   max-width: 100%;    
+}
+
+
+.input-contact {
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+   min-width: 10%;
+}
+
+.input-contact::placeholder, textarea::placeholder {
+    text-align: center;
+}
+
+.label-contact {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+   
+}
+
+.label-contact1 {  
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    color: red;
+    text-align: center;   
+}
+
+.select-contact, .message-contact {
+    border-radius: 1rem;
+    border:none;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.50rem;
+    min-width: 40%;
+}
+
+.button-contact {
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    margin: 1rem 3rem 0 3rem;
+    padding: 1rem;
+}
+
+.button-contact:hover {
+    color: blue;
+}
+
+
+
+
+
+/***** mrdias queries *****/
+@media screen and (max-width:768px){
+   .h1-contact{
+    font-size: 3rem;
+   }
+    .contact-form{
+        max-width: 60%;
+    }
+   
+}
+
+
+@media screen and (max-width:450px){
+    .h1-contact{
+        font-size: 2rem;
+    }
+
+    .contact-form{
+        min-width: 65%;
+    }
+              
+    .select-contact, .message-contact {    
+        font-size: 1.250rem;
+        
+    }
+
+        
+    .label-contact1 {  
+        font-size: 1.20rem;        
+    }
+}

@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 1px;
+  right: 1px; 
+  background: black;
+  padding: 2rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  z-index: 3;
+  height: 65px;
+  gap: 2rem;
+}
+
+.navbar {  
+  padding: 1rem; 
+ /* text-align: center;*/
+ flex: 1 1 10rem;
+ 
+}
+
+/*MontMerveilleux*/
+.navbar-logo {  
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem auto;
+
+  flex: 1 1 3rem;
+  
+}
+
+.nom-site{
+  font-family: 'Pacifico', cursive !important;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.nav-item {
+  font-size: 2rem;
+  list-style: none;
+  margin-left: 2rem; /*dernier ajout*/
+}
+
+.nav-links {
+  color: white;
+}
+
+.nav-menu .nav-item:nth-child(6) {
+  background-color: blue;
+  text-align: center;
+  color: white;
+  width: 12rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+
+}
+
+
+.nav-item:hover {
+  border-bottom: 2px solid blue;
+}
+
+.activated {
+  background-color: blue;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* cacher logo burger*/
+.menu-icon {
+  display: none;
+  color: blue;
+  background-color: white;
+  align-self: center;
+  padding: 1rem;
+  margin-top: -1.25rem;
+  border-radius: 0.5rem;
+}
+
+.menu-icon:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+/*********** MEDIAS QUERIES ***********/
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;  
+    top: 102px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: black;
+    border-top: 1px solid #dd1378;
+    max-height: 63vh;
+    z-index: 4;
+  }
+
+  .nav-menu.active {
+    left: 1px;
+    opacity: 1;
+    transition: all 0.6s ease;   
+    z-index: 1;
+    margin-top: -5rem;
+    overflow-x: hidden;
+
+  }
+
+  .nav-links {
+    text-align: center;  
+    width: 10%;    
+    display: table;
+    margin: 1rem 1rem;
+  }
+
+  .nav-links:hover {  
+    background-color: #dd1378;
+    padding: 1rem;
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  .nav-item:hover {
+    border: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    font-size: 1.50rem;
+  }
+  
+
+  /* FaTimes, FaBars*/
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -11px;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+
+  }
+
+  .nav-menu {
+    gap: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 450px){
+  /**/
+  .navbar-logo {
+    font-size: 1.80rem;
+    margin-left: 2rem;
+
+    flex: 1 1 15rem
+
+  }
+}

@@ -1,0 +1,191 @@
+
+.packages {
+    margin-top: 3rem;
+    background-color: rgba(20, 43, 43, 0.74);    
+    margin: 15rem 5%;
+}
+
+.contenu-packages {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 5%;
+    gap: 1.5rem;  
+    min-height: 42vh;
+}
+
+.contenu-gauche {
+    flex: 1 1 15rem;   
+    align-self: center;
+    text-align: center;
+    position: relative;
+    gap: 1rem;
+}
+
+
+.contenu-gauche .titreh1,
+.para1 {
+    width: 100%;
+
+}
+
+.titreh1 {
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.para1 {
+    font-size: 3rem;
+    align-self: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+.box-para-contact {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 0.5rem;
+    width: 18rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.box-para-contact h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.box-para-contact h3:hover {
+    color: blue;
+}
+
+
+
+/********* contenu droite ******/
+.contenu-droite {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.img-packages {
+    flex: 1 1 25rem;
+    background-color: aliceblue;   
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 7rem;            
+}
+
+.img-packages img {
+    width: 100%;
+}
+
+.texte-droite {
+    font-size: 1.50rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    height: 20vh;
+}
+
+span.camper,
+span.balade,
+span.randonnee,
+span.surfer {
+    color: black;  
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 0.65rem;        
+}
+
+span.price {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+.para2 {
+    padding: 0.25rem;
+    font-size: 1.50rem;
+
+}
+
+
+.box-droite{
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** MEDIAS QUERIES ***********/
+@media screen and (max-width:986px) {
+    .contenu-packages {
+        flex-direction: column;
+        max-height: 290vh;
+        padding: 10rem 5%;
+        gap: 2rem;
+    }
+
+    .box-droite {
+        margin-top: 4rem;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .img-packages {
+        flex: 1 1 15rem;
+    }
+
+    .titreh1 {
+        font-size: 8rem;
+    }
+        
+}
+
+
+@media screen and (max-width:450px) {
+    .box-droite {
+        margin-top: 5rem;
+    }
+
+    .titreh1 {
+        font-size: 6rem;
+    }
+   
+    
+    .texte-droite{
+       font-size: 1.25rem;
+    }
+
+    .para2{
+        font-size: 1.25rem;
+    }
+}

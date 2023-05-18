@@ -1,0 +1,30 @@
+.cat-title{
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1rem;   
+  
+}
+
+
+.cat-description{
+    font-size: 1.50rem; 
+    text-align: center;   
+    margin: 1rem;
+  
+}
+
+.cat-price{
+    color: blue;
+   font-weight: bolder;
+   font-size: 1.50rem;
+   text-align: center;
+   background-color: #fff;
+   margin-bottom: 1rem;
+   padding: 1rem;
+  
+}
+
+
+

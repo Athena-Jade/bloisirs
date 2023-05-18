@@ -1,0 +1,247 @@
+
+.home {
+    position: relative;
+}
+
+.contenu-home {
+    display: flex;
+    justify-content: space-between;
+   /* background-color: black;*/
+
+}
+
+.img-about {
+    flex: 1 1 50rem;  
+   /* margin: 12rem 5%; */
+   margin-top: 7rem;
+}
+
+
+.img-about img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* texte sur image*/
+.content-text {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/* venez expérimenter*/
+.titre1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* nos nombreux activités...*/
+.para-home {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 1%;
+}
+
+
+.lire-suite {
+    background-color: #101110;
+    font-size: 1.50rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.lire-suite h4 {
+    color: white;
+}
+
+.lire-suite h4:hover {
+    color: #2b5cd2;
+
+}
+
+
+
+/*********** categories**************/
+.categories {
+    margin: 10rem 5%;   
+    min-height: 55vh;
+  /*  background-color: rgba(20, 43, 43, 0.74);
+    padding: 1rem;*/
+}
+
+.categoriesh1 {
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+    padding-top: 4rem;
+
+}
+
+.nos-cat {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);  
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.saut,
+.canoe,
+.tyrolienne,
+.paddle {        
+    padding: 1rem; 
+    background-color: rgb(197, 191, 191);
+    position: relative;
+}
+
+.img-cat {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.price-category {
+    position: absolute;
+    top: 45%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/******** peace *******/
+.peace {
+    margin-top: 10rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 9%;
+}
+
+.peace .image {
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.peace .image img {
+    width: 100%;
+    box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.peace .content {
+    flex: 1 1 42rem;
+}
+
+.peace .content h2 {
+    font-size: 3rem;
+    color: #2b5cd2;
+    ;
+    font-weight: bold;
+}
+
+.peace .content p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** MEDIAS QUERIES *****/
+@media screen and (max-width:1000px) {
+    /* A la decouverte... */
+    .content-text .titre1 {
+        font-size: 3.5rem;
+    }
+   
+    .categoriesh1 {
+        font-size: 3.5rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    .categoriesh1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:596px) {
+    .categoriesh1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .content-text .titre1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    .content-text .titre1 {
+        font-size: 2.5rem;
+    }
+
+    .para-home {
+        font-size: 1.50rem
+    }
+
+    .price-category {
+        position: absolute;
+        top: 38%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1.25rem;
+
+    }
+
+    /*
+    .img-about{
+        margin-top: 3rem;
+    }*/
+
+
+}
